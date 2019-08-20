@@ -191,8 +191,7 @@
                 android:value="@color/muzei_color" />
         </provider>
 
-        <receiver android:name=".services.ClockWidget"
-            android:label="Clock Widget">
+        <receiver android:name=".services.ClockWidget" android:label="Clock Widget">
 
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
