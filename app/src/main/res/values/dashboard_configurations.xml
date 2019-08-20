@@ -55,6 +55,17 @@
         ]]>
     </string>
 
+    <!-- Link Used to Rate and Review Your App. Set Blank to Disable -->
+    <!-- You can Use Keyword "thisPackage", it will be replaced with your app's package name -->
+    <string name="rate_and_review_link">https://play.google.com/store/apps/details?id=thisPackage</string>
+
+    <!-- Link Used for Share Link of Your App. Set Blank to Disable -->
+    <!-- You can Use Keyword "thisPackage", it will be replaced with your app's package name -->
+    <string name="share_link">https://play.google.com/store/apps/details?id=thisPackage</string>
+
+    <!-- Enable Check for Update -->
+    <bool name="enable_check_update">false</bool>
+
     <!-- More apps at Google Play Store
     * Link to google play store developer
     * If you don't want to show this part, just leave this empty -->
@@ -124,6 +135,9 @@
     * change to true to enable it -->
     <bool name="reset_icon_request_limit">true</bool>
 
+    <!-- Enable JSON Data check before Requesting Icons -->
+    <bool name="json_check_before_request">false</bool>
+
     <!-- Enable or disable premium request
     * default: false
     * change to true to enable it -->
@@ -131,8 +145,15 @@
 
     <!-- Take a look inside License.java for premium request product -->
 
+    <!-- If you set it to true, your user can even choose non-mailing app for requesting Icons -->
+    <bool name="enable_non_mail_app_request">false</bool>
+
     <!-- Email that will be used to send icon request and report bugs -->
     <string name="dev_email">yourmail@example.com</string>
+
+    <!-- Icon Request Email Subject. Leave Empty to Use Deafult Subject. -->
+    <string name="request_email_subject"></string>
+    <string name="premium_request_email_subject"></string>
 
     <!-- CONFIG: CLOUD WALLPAPERS -->
 
@@ -209,7 +230,6 @@
         <item>https://www.instagram.com/_u/yourusername</item>
         <item>https://twitter.com/</item>
         <item>https://www.behance.net/</item>
-        <item>https://plus.google.com/u/1/+yourusername</item>
         <item>http://github.com/yourusername</item>
         <item>http://www.yourwebsite.com</item>
         <item>your@email.com</item>
@@ -219,31 +239,31 @@
     * Take a look inside res/xml/contributors.xml to add contributors -->
     <bool name="show_contributors_dialog">false</bool>
 
+    <!-- Privacy Policy Link. Set Blank to Disable. You can generate one from https://app-privacy-policy-generator.firebaseapp.com/ -->
+    <string name="privacy_policy_link"></string>
+
+    <!-- Terms and Conditions link. Set Blank to Disable. You can generate one from https://app-privacy-policy-generator.firebaseapp.com/ -->
+    <string name="terms_and_conditions_link"></string>
+
     <!-- CONFIG: DONATE -->
 
     <!-- DONATION
     * Show support development option in navigation view
     * default: true
     * change to false to disable it -->
-    <bool name="enable_donation">true</bool>
+    <bool name="enable_donation">false</bool>
 
     <!-- Take a look inside License.java for donation product -->
 
-    <!-- Link Used to Rate and Review Your App. Set Blank to Disable -->
-    <!-- You can Use Keyword "thisPackage", it will be replaced with your app's package name -->
-    <string name="rate_and_review_link">https://play.google.com/store/apps/details?id=thisPackage</string>
+    <!-- CONFIG: PLAYSTORE CHECK -->
+    <!-- Closes app if installed outside of Playstore -->
+    <bool name="playstore_check_enabled">false</bool>
 
-    <!-- Link Used for Share Link of Your App. Set Blank to Disable -->
-    <!-- You can Use Keyword "thisPackage", it will be replaced with your app's package name -->
-    <string name="share_link">https://play.google.com/store/apps/details?id=thisPackage</string>
+    <!-- Link CandyBar Config JSON -->
+    <string name="config_json"></string>
 
-    <!-- Link to JSON from which the app will check for updates. Set Blank to Disable -->
-    <string name="update_json_link"></string>
-
-    <!-- Privacy Policy Link. Set Blank to Disable. You can generate one from https://app-privacy-policy-generator.firebaseapp.com/ -->
-    <string name="privacy_policy_link"></string>
-
-    <!-- Terms and Conditions link. Set Blank to Disable. You can generate one from https://app-privacy-policy-generator.firebaseapp.com/ -->
-    <string name="terms_and_conditions_link"></string>
+    <!-- CONFIG: INTRO -->
+    <!-- Show Intro Guides on First Run -->
+    <bool name="show_intro">true</bool>
 
 </resources>
