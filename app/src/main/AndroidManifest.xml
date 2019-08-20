@@ -17,7 +17,7 @@
         android:xlargeScreens="true" />
 
     <application
-        tools:ignore="GoogleAppIndexingWarning"
+        tools:ignore="GoogleAppIndexingWarning,GoogleAppIndexingUrlError"
         android:name=".applications.CandyBar"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -36,8 +36,9 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <!--<meta-data android:name="android.app.shortcuts"
-              android:resource="@xml/shortcuts" />-->
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
         </activity>
 
         <activity
@@ -49,12 +50,21 @@
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
             <intent-filter>
-                <action android:name="android.intent.action.GET_CONTENT" />
+                <action android:name="android.intent.action.VIEW" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.OPENABLE" />
 
                 <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SET_WALLPAPER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.PICK" />
@@ -107,6 +117,11 @@
             <intent-filter>
                 <action android:name="com.gridappsinc.launcher.theme.apk_action" />
                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- Lawnchair -->
+            <intent-filter>
+                <action android:name="ch.deletescape.lawnchair.ICONPACK" />
+                <category android:name="ch.deletescape.lawnchair.PICK_ICON" />
             </intent-filter>
             <!-- Nova Launcher Custom Icon Picker -->
             <intent-filter>
@@ -161,30 +176,29 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".activities.MuzeiActivity"
-            android:label="@string/muzei_settings"
-            android:theme="@style/AppTheme"
-            android:exported="true"
-            android:configChanges="orientation|keyboardHidden|screenSize" />
-
-        <service
+        <provider
             android:name=".services.MuzeiService"
+            android:authorities="${applicationId}.ArtProvider"
             android:label="@string/muzei_art_source_name"
             android:description="@string/muzei_art_source_desc"
-            android:icon="@drawable/ic_muzei_logo"
-            android:permission="android.permission.WAKE_LOCK">
+            android:exported="true"
+            android:permission="com.google.android.apps.muzei.api.ACCESS_PROVIDER">
             <intent-filter>
-                <action android:name="com.google.android.apps.muzei.api.MuzeiArtSource" />
+                <action android:name="com.google.android.apps.muzei.api.MuzeiArtProvider" />
             </intent-filter>
-
             <meta-data
                 android:name="color"
                 android:value="@color/muzei_color" />
-            <meta-data
-                android:name="settingsActivity"
-                android:value=".activities.MuzeiActivity" />
-        </service>
+        </provider>
+
+        <receiver android:name=".services.ClockWidget"
+            android:label="Clock Widget">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/analog_clock" />
+        </receiver>
 
         <!-- This is important -->
         <provider

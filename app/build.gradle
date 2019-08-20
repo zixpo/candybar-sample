@@ -40,9 +40,8 @@ android {
         // Remove '/*' and '*/' below to enable OneSignal
         /*
         manifestPlaceholders = [
-          onesignal_app_id: 'ONESIGNAL APP ID',
-                          // ^^^^^ Put Your App ID There
-          onesignal_google_project_number: 'REMOTE'
+           onesignal_app_id: "ONESIGNAL APP ID",
+           onesignal_google_project_number: "REMOTE"
         ]
         */
     }
@@ -61,8 +60,6 @@ android {
 }
 
 dependencies {
-    api fileTree(dir: 'libs', include: ['*.jar'])
-
     /*
      * CandyBar Material Dashboard Library
      *
@@ -75,11 +72,8 @@ dependencies {
      * 6. Done
      */
 
-    implementation 'com.github.zixpo:candybar:v3.5.0-b5'
-    implementation 'androidx.annotation:annotation:1.0.0'
-    implementation 'androidx.appcompat:appcompat:1.0.0'
-    implementation 'com.google.android.apps.muzei:muzei-api:2.0'
+    implementation 'com.github.zixpo:candybar:v3.5.0-b6'
 
     // Remove '//' below to Enable OneSignal
-    //implementation 'com.onesignal:OneSignal:3.9.1'
+    //implementation 'com.onesignal:OneSignal:3.10.7'
 }
