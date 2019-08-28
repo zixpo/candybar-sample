@@ -220,7 +220,7 @@
 
     <!-- Social link inside about
     * Supported link:
-    * Email, Behance, Dribbble, Facebook, Github, Google+, Instagram, Pinterest, Twitter
+    * Email, Behance, Dribbble, Facebook, Github, Instagram, Pinterest, Twitter
     * The link will be marked as regular website if doesn't listed above
     *
     * If you don't want to show social link, just set about_social_links to empty
