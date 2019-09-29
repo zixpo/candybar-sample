@@ -71,6 +71,9 @@
     * If you don't want to show this part, just leave this empty -->
     <string name="google_play_dev">https://play.google.com/store/apps/dev?id=your_developer_id</string>
 
+    <!-- Set it to `true` if you want flat outlined card -->
+    <bool name="use_flat_card">false</bool>
+
     <!-- CONFIG: NAVIGATION VIEW HEADER -->
 
     <!-- Navigation view header image
