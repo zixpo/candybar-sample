@@ -2,7 +2,7 @@ package com.candybar.sample.applications;
 
 import androidx.annotation.NonNull;
 
-// Remove '//' below to Enable OneSignal
+// Remove `//` below to Enable OneSignal
 //import com.onesignal.OneSignal;
 
 import candybar.lib.applications.CandyBarApplication;
