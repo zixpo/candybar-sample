@@ -12,10 +12,6 @@ apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 */
 apply plugin: 'com.android.application'
 
-repositories {
-    maven { url 'https://jitpack.io' }
-}
-
 android {
 
     compileSdkVersion rootProject.ext.CompileSdk
@@ -73,8 +69,8 @@ dependencies {
      * 6. Done
      */
 
-    implementation 'com.github.zixpo:candybar:v3.5.0-beta.6.7'
+    implementation 'com.github.zixpo:candybar:3.6.0'
 
     // Remove '//' below to Enable OneSignal
-    //implementation 'com.onesignal:OneSignal:3.11.3'
+    //implementation 'com.onesignal:OneSignal:3.12.4'
 }
