@@ -33,6 +33,9 @@ android {
         versionName "1.0"
         multiDexEnabled true
 
+        // Naming app bundles
+        setArchivesBaseName("${parent.name}-v${versionName}")
+
         // Remove '/*' and '*/' below to enable OneSignal
         /*
         manifestPlaceholders = [
@@ -69,7 +72,7 @@ dependencies {
      * 6. Done
      */
 
-    implementation 'com.github.zixpo:candybar:3.6.3'
+    implementation 'com.github.zixpo:candybar:3.7.0'
 
     // Remove '//' below to Enable OneSignal
     //implementation 'com.onesignal:OneSignal:3.12.4'
