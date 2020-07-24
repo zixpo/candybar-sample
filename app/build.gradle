@@ -17,14 +17,6 @@ android {
     compileSdkVersion rootProject.ext.CompileSdk
     buildToolsVersion rootProject.ext.BuildTools
 
-    android.applicationVariants.all { variant ->
-        variant.outputs.all { output ->
-            def appName = parent.name
-            def fileName = appName.replace(" ", "_")
-            outputFileName = "$fileName-v${variant.versionCode}.apk"
-        }
-    }
-
     defaultConfig {
         applicationId "com.candybar.sample"
         minSdkVersion rootProject.ext.MinSdk
@@ -34,7 +26,7 @@ android {
         multiDexEnabled true
 
         // Naming app bundles
-        setArchivesBaseName("${parent.name}-v${versionName}")
+        setArchivesBaseName("${parent.name}-v${versionCode}")
 
         // Remove '/*' and '*/' below to enable OneSignal
         /*
