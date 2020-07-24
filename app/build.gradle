@@ -13,9 +13,7 @@ apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 apply plugin: 'com.android.application'
 
 android {
-
     compileSdkVersion rootProject.ext.CompileSdk
-    buildToolsVersion rootProject.ext.BuildTools
 
     defaultConfig {
         applicationId "com.candybar.sample"
@@ -64,7 +62,7 @@ dependencies {
      * 6. Done
      */
 
-    implementation 'com.github.zixpo:candybar:3.7.1'
+    implementation 'com.github.zixpo:candybar:3.7.2'
 
     // Remove '//' below to Enable OneSignal
     //implementation 'com.onesignal:OneSignal:3.12.4'
