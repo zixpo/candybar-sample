@@ -5,14 +5,16 @@
     <!-- ============================== DASHBOARD CONFIGURATIONS =============================== -->
     <!-- ======================================================================================= -->
 
-    <!-- CONFIG: DEFAULT THEME -->
-
+    <!--
+        CONFIG: DEFAULT THEME
+    -->
     <!-- Use dark theme as the default theme -->
     <bool name="use_dark_theme">false</bool>
 
 
-    <!-- CONFIG: MUZEI -->
-
+    <!--
+        CONFIG: MUZEI
+    -->
     <!-- Muzei art source name -->
     <string name="muzei_art_source_name">Your Art Source Name</string>
 
@@ -23,8 +25,9 @@
     <color name="muzei_color">#0082B4</color>
 
 
-    <!-- CONFIG: HOME -->
-
+    <!--
+        CONFIG: HOME
+    -->
     <!-- Home title. This will be shown in the home page -->
     <string name="home_title">CandyBar Sample</string>
 
@@ -34,7 +37,8 @@
         just put the image's name here without the extension (ex: home_image.png -> home_image)
 
         If you want to use a solid color, you can put the hex color code here
-        ex: <string name="navigation_view_header">#000000</string> -->
+        ex: <string name="navigation_view_header">#000000</string>
+        -->
     <string name="home_image">home_image</string>
 
     <!-- Home image style
@@ -85,8 +89,9 @@
     <bool name="use_flat_card">true</bool>
 
 
-    <!-- CONFIG: NAVIGATION VIEW HEADER -->
-
+    <!--
+        CONFIG: NAVIGATION VIEW HEADER
+    -->
     <!-- Navigation view header image
         If you want to use an image from url, just put the url here
         If you want to use an image stored in the project ("drawable" folder)
@@ -94,7 +99,8 @@
         (ex: navigation_view_header.png -> navigation_view_header)
 
         If you want to use a solid color, you can put the hex color code here
-        ex: <string name="navigation_view_header">#000000</string> -->
+        ex: <string name="navigation_view_header">#000000</string>
+        -->
     <string name="navigation_view_header">nav_head</string>
 
     <!-- Navigation view header text
@@ -102,15 +108,17 @@
     <string name="navigation_view_header_title">CandyBar</string>
 
 
-    <!-- CONFIG: APPLY -->
-
+    <!--
+        CONFIG: APPLY
+    -->
     <!-- Enable or disable apply section -->
     <bool name="enable_apply">true</bool>
 
 
-    <!-- CONFIG: ICONS -->
-
-    <!-- Enable or disable icons sorting
+    <!--
+        CONFIG: ICONS
+    -->
+    <!-- Enable/disable icons sorting
         Disabling this will improve performance and icons will load faster (because there is no sorting to do) -->
     <bool name="enable_icons_sort">true</bool>
 
@@ -121,8 +129,9 @@
         Put drawable.xml inside the "xml" folder -->
 
 
-    <!-- CONFIG: ICON REQUEST -->
-
+    <!--
+        CONFIG: ICON REQUEST
+    -->
     <!-- Enable or disable regular icon request -->
     <bool name="enable_icon_request">true</bool>
 
@@ -178,8 +187,9 @@
     <string name="arctic_manager_api_key"></string>
 
 
-    <!-- CONFIG: CLOUD WALLPAPERS -->
-
+    <!--
+        CONFIG: WALLPAPERS
+    -->
     <!-- Wallpaper JSON link
         If your icon pack doesn't contain any wallpaper, just leave this empty
         <string name="wallpaper_json"></string>
@@ -211,8 +221,9 @@
     <string name="wallpaper_grid_preview_style">square</string>
 
 
-    <!-- CONFIG: ABOUT -->
-
+    <!--
+        CONFIG: ABOUT
+    -->
     <!-- About header image
         If you want to use an image from url, just put the url here
         If you want to use an image stored in the project ("drawable" folder)
@@ -228,12 +239,10 @@
         just put the image's name here without the extension (ex: about_profile_image.png -> about_profile_image) -->
     <string name="about_profile_image">profile_picture</string>
 
-    <!-- About title
-        The BIG text which is shown above the description and below the about profile image -->
+    <!-- The BIG text which is shown above the description and below the about profile image -->
     <string name="about_title">Your name</string>
 
-    <!-- About description
-        The description which is shown below the about title.
+    <!-- The description which is shown below the about title.
         Put your markup/text inside of `<![CDATA[` and `]]>`
         ex: `<![CDATA[ There are - <b>Bold</b> <i>Italic</i> <u>Underline</u> <a href="url">Link</a> ]]>` -->
     <string name="about_desc">
@@ -243,8 +252,7 @@
         ]]>
     </string>
 
-    <!-- Social links
-        Links which will be shown in the about section.
+    <!-- Social links which will be shown in the about section.
 
         Supported links:
         Email, Behance, Dribbble, Facebook, Github, Instagram, Pinterest, Twitter and Telegram
@@ -282,17 +290,19 @@
     <string name="terms_and_conditions_link"></string>
 
 
-    <!-- CONFIG: DONATE -->
-
-    <!-- DONATION
+    <!--
+        CONFIG: DONATE
+    -->
+    <!-- Enable/disable donation
         Show support development option in the home page. -->
     <bool name="enable_donation">false</bool>
 
     <!-- Take a look inside License.java for donation product -->
 
 
-    <!-- CONFIG: MISC -->
-
+    <!--
+        CONFIG: MISC
+    -->
     <!-- Closes app if the app is installed outside of Play store -->
     <bool name="playstore_check_enabled">false</bool>
 
