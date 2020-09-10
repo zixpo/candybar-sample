@@ -7,10 +7,7 @@
 
     <!-- CONFIG: DEFAULT THEME -->
 
-    <!-- Use dark theme as the default theme
-        Use dark theme -> true
-        Use light theme -> false
-        -->
+    <!-- Use dark theme as the default theme -->
     <bool name="use_dark_theme">false</bool>
 
 
@@ -290,6 +287,7 @@
     <bool name="enable_donation">false</bool>
 
     <!-- Take a look inside License.java for donation product -->
+
 
     <!-- CONFIG: MISC -->
 
