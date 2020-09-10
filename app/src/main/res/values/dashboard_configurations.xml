@@ -7,10 +7,7 @@
 
     <!-- CONFIG: DEFAULT THEME -->
 
-    <!-- Use dark theme as the default theme
-        Use dark theme -> true
-        Use light theme -> false
-        -->
+    <!-- Use dark theme as the default theme -->
     <bool name="use_dark_theme">false</bool>
 
 
@@ -50,10 +47,12 @@
     <string name="home_image_style">card_landscape</string>
 
     <!-- Description which will be shown in the home page.
-        If you want to use basic HTML, put it inside of `<![CDATA[` and `]]>`
-        ex: `Markup coming up - <![CDATA[ <b>Bold</b> <i>Italic</i> <u>Underline</u> <a href="url">Link</a> ]]>`
+        Put your markup/text inside of `<![CDATA[` and `]]>`
+        ex: `<![CDATA[ There are - <b>Bold</b> <i>Italic</i> <u>Underline</u> <a href="url">Link</a> ]]>`
 
-        If you don't want to show any description, just leave this empty -->
+        If you don't want to show any description, just leave this empty
+        ex: <string name="home_description"></string>
+        -->
     <string name="home_description">
         <![CDATA[
             <b>You</b> <i>can</i> use <u>formatted text</u> here.
@@ -235,8 +234,8 @@
 
     <!-- About description
         The description which is shown below the about title.
-        If you want to use basic HTML, put it inside of `<![CDATA[` and `]]>`
-        ex: `Markup coming up - <![CDATA[ <b>Bold</b> <i>Italic</i> <u>Underline</u> <a href="url">Link</a> ]]>` -->
+        Put your markup/text inside of `<![CDATA[` and `]]>`
+        ex: `<![CDATA[ There are - <b>Bold</b> <i>Italic</i> <u>Underline</u> <a href="url">Link</a> ]]>` -->
     <string name="about_desc">
         <![CDATA[
             Say something about yourself. <b>You</b> <i>can</i> also use <u>formatted text</u> here.
@@ -290,6 +289,7 @@
     <bool name="enable_donation">false</bool>
 
     <!-- Take a look inside License.java for donation product -->
+
 
     <!-- CONFIG: MISC -->
 
