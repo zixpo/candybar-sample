@@ -3,7 +3,7 @@ package com.candybar.sample.activities;
 import androidx.annotation.NonNull;
 
 import candybar.lib.activities.CandyBarMainActivity;
-import candybar.lib.activities.configurations.ActivityConfiguration;
+
 import com.candybar.sample.licenses.License;
 
 public class MainActivity extends CandyBarMainActivity {

@@ -68,13 +68,13 @@
 
     <!-- Link to your app's Rate and Review page.
         Leave this empty to disable the "Rate and Review" button.
-        You can use special keyword `thisPackage`, `thisPackage` will be replaced with your app's package name -->
-    <string name="rate_and_review_link">https://play.google.com/store/apps/details?id=thisPackage</string>
+        You can use special keyword `{{packageName}}`, `{{packageName}}` will be replaced with your app's package name -->
+    <string name="rate_and_review_link">https://play.google.com/store/apps/details?id={{packageName}}</string>
 
     <!-- Link to your app's main page. It will be used when your user shares your app using "Share" button.
         Leave this empty to disable the "Share" button.
-        You can use special keyword `thisPackage`, `thisPackage` will be replaced with your app's package name -->
-    <string name="share_link">https://play.google.com/store/apps/details?id=thisPackage</string>
+        You can use special keyword `{{packageName}}`, `{{packageName}}` will be replaced with your app's package name -->
+    <string name="share_link">https://play.google.com/store/apps/details?id={{packageName}}</string>
 
     <!-- Enable "Check for update" button.
         It needs the option "config_json" to be configured in order to work -->
@@ -124,6 +124,10 @@
 
     <!-- Shows icon's name below the icon, in "Icons" section -->
     <bool name="show_icon_name">true</bool>
+
+    <!-- Enable if your icon pack includes adaptive icons.
+        When enabled, the dashboard shows an Icon Shape changer button -->
+    <bool name="includes_adaptive_icons">false</bool>
 
     <!-- Icons section will read icons from drawable.xml same as Nova Launcher
         Put drawable.xml inside the "xml" folder -->
@@ -176,15 +180,28 @@
         If you want to hide the information then you should enable this -->
     <bool name="hide_missing_app_count">false</bool>
 
-    <!-- Email that will be used to send icon request and report bugs -->
-    <string name="dev_email">yourmail@example.com</string>
+    <!-- Method to use for icon request. Value can be "email" or "arctic".
+        `email` -> Sends icon requests using email
+        `arctic` -> Sends icon requests using Arctic Manager
 
-    <!-- Icon Request Email Subject. Leave Empty to Use Default Subject. -->
-    <string name="request_email_subject"></string>
+        You can leave "premium_request_method" empty to use the regular request's method to send premium icon requests. -->
+    <string name="regular_request_method">email</string>
+    <string name="premium_request_method"></string>
+
+    <!-- Email to use when sending icon requests.
+        Regular request email address will be used to send bug reports.
+        You can leave "premium_request_email" empty to use the regular request's email to send premium icon requests. -->
+    <string name="regular_request_email">youremail@example.com</string>
+    <string name="premium_request_email"></string>
+
+    <!-- Icon request email subjects. Leave empty to use default Subject. -->
+    <string name="regular_request_email_subject"></string>
     <string name="premium_request_email_subject"></string>
 
-    <!-- Icon Request with Arctic Manager. Leave empty to disable Arctic Manager. -->
-    <string name="arctic_manager_api_key"></string>
+    <!-- API keys for Arctic Manager.
+        You can leave "premium_request_arctic_api_key" empty to use the regular request's arctic api key to send premium icon requests. -->
+    <string name="regular_request_arctic_api_key"></string>
+    <string name="premium_request_arctic_api_key"></string>
 
 
     <!--
@@ -308,7 +325,7 @@
 
     <!-- Link to CandyBar config JSON
         You can use this to control your dashboard remotely.
-        Learn more at https://github.com/zixpo/candybar-sample/wiki/Setting-up-Config-JSON -->
+        Learn more at https://github.com/zixpo/candybar-sample/wiki/Setting-up-the-config-json -->
     <string name="config_json"></string>
 
     <!-- Show intro guides on first run -->
