@@ -62,7 +62,7 @@ dependencies {
      * 6. Done
      */
 
-    implementation 'com.github.zixpo:candybar:3.8.0'
+    implementation 'com.github.zixpo:candybar:3.8.1'
 
     // Remove '//' below to Enable OneSignal
     // implementation 'com.onesignal:OneSignal:3.15.0'
