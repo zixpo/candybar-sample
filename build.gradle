@@ -5,7 +5,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.0.2'
+        classpath 'com.android.tools.build:gradle:4.1.3'
     }
 }
 
@@ -20,9 +20,8 @@ allprojects {
 
     rootProject.ext {
         MinSdk = 15
-        TargetSdk = 29
-        CompileSdk = 29
-        SupportLibrary = "27.1.1"
+        TargetSdk = 30
+        CompileSdk = 30
     }
 }
 
