@@ -1,8 +1,7 @@
-language: android
+os: linux
 dist: trusty
-install: true
+language: android
 jdk: oraclejdk8
-
 env:
   global:
     - ANDROID_API=30
@@ -12,18 +11,12 @@ android:
   components:
     - tools
     - platform-tools
-    - extra-android-support
-    - extra-google-google_play_services
-    - extra-android-m2repository
-    - extra-google-m2repository
+    - tools
   licenses:
     - '.+'
-
 before_install:
-  - yes | sdkmanager "platforms;android-$ANDROID_API"
   - yes | sdkmanager "build-tools;$ANDROID_BUILD_TOOLS"
-  - chmod +x gradlew
-  - ./gradlew dependencies || true
-  
+  - yes | sdkmanager "platforms;android-$ANDROID_API"
+
 script:
-  - ./gradlew clean :app:assembleRelease --stacktrace
+  - chmod +x gradlew && ./gradlew --no-daemon clean :app:assembleRelease --stacktrace
