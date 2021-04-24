@@ -19,4 +19,4 @@ before_install:
   - yes | sdkmanager "platforms;android-$ANDROID_API"
 
 script:
-  - chmod +x gradlew && ./gradlew --no-daemon clean :app:assembleRelease --stacktrace
+  - chmod +x gradlew && ./gradlew clean :app:assembleRelease --stacktrace
