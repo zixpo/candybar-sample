@@ -1,6 +1,6 @@
 # CandyBar Sample
 [![JitPack Version](https://jitpack.io/v/zixpo/candybar.svg)](https://jitpack.io/#zixpo/candybar)
-[![Build Status](https://api.travis-ci.com/zixpo/candybar-sample.svg?branch=master)](https://travis-ci.com/zixpo/candybar-sample)
+[![Build Status](https://img.shields.io/github/workflow/status/zixpo/candybar-sample/Android%20CI)](https://github.com/zixpo/candybar-sample/actions/workflows/android.yml)
 
 Sample Implementation of CandyBar Dashboard.
 
