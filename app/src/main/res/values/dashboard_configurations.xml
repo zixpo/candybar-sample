@@ -335,9 +335,6 @@
     <!--
         CONFIG: MISC
     -->
-    <!-- Closes app if the app is installed outside of Play store -->
-    <bool name="playstore_check_enabled">false</bool>
-
     <!-- Link to CandyBar config JSON
         You can use this to control your dashboard remotely.
         Learn more at https://github.com/zixpo/candybar-sample/wiki/Setting-up-the-config-json -->
