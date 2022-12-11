@@ -15,6 +15,8 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion rootProject.ext.CompileSdk
 
+    namespace 'com.candybar.sample'
+
     defaultConfig {
         applicationId 'com.candybar.sample'
         minSdkVersion rootProject.ext.MinSdk
@@ -57,7 +59,7 @@ dependencies {
      * If you've missed some versions you've to also follow update guide for those versions
      */
 
-    implementation 'com.github.zixpo:candybar:3.15.0'
+    implementation 'com.github.zixpo:candybar:3.16.0'
 
     // TODO: Remove `//` below to enable OneSignal
     //implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
