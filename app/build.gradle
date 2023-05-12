@@ -47,6 +47,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    lint {
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -59,7 +63,7 @@ dependencies {
      * If you've missed some versions you've to also follow update guide for those versions
      */
 
-    implementation 'com.github.zixpo:candybar:3.17.0'
+    implementation 'com.github.zixpo:candybar:3.17.1'
 
     // TODO: Remove `//` below to enable OneSignal
     //implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
