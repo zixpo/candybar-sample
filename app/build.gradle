@@ -23,7 +23,6 @@ android {
         targetSdkVersion rootProject.ext.TargetSdk
         versionCode 1
         versionName '1.0'
-        multiDexEnabled true
 
         // Naming app bundles
         setArchivesBaseName("${parent.name}-v${versionCode}")
@@ -63,8 +62,25 @@ dependencies {
      * If you've missed some versions you've to also follow update guide for those versions
      */
 
-    implementation 'com.github.zixpo:candybar:3.17.3'
+    implementation 'com.github.zixpo:candybar:3.17.4'
 
     // TODO: Remove `//` below to enable OneSignal
     //implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+}
+
+// Code for automatically copying appfilter.xml and drawable.xml
+// from `res/xml` directory to `assets` directory
+task copyXMLs {
+    ['appfilter.xml', 'drawable.xml'].each {file ->
+        copy {
+            from "$projectDir/src/main/res/xml/$file"
+            into "$projectDir/src/main/assets/"
+        }
+    }
+}
+
+tasks.whenTaskAdded { task ->
+    if (task.name == 'assembleDebug' || task.name == 'assembleRelease') {
+        task.dependsOn copyXMLs
+    }
 }
