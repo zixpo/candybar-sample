@@ -185,6 +185,9 @@
         It's something like, paying a sum of money for getting requested icons faster. -->
     <bool name="enable_premium_request">true</bool>
 
+    <!-- Add support for re-requesting icons -->
+    <bool name="enable_icon_request_multiple">false</bool>
+
     <!-- Enable the option to "Restore Purchases" in Settings section of the app.
         It would be best if you set it to `false`, because it's known that some
         people misuse this feature and make **more** premium icon request than the amount
