@@ -161,6 +161,12 @@
         The number of icon a user can request should be specified in the "icon_request_limit" section -->
     <bool name="enable_icon_request_limit">false</bool>
 
+    <!-- Enable multiple requests for same icon
+        When enabled, users will be able to request the same icon twice. This can be useful if you
+        offer free and premium requests, so a free request doesn't prevent the user from submitting
+        a premium request for the same icon. Can also be useful for a voting system. -->
+    <bool name="enable_icon_request_multiple">false</bool>
+
     <!-- Limit the numbers of icon a user can request
         IGNORE if "enable_icon_request_limit" option is disabled
         ex: If you set icon request limit to 10, a user will able to request only 10 icons in total
@@ -184,9 +190,6 @@
         Later they can use the premium request product to do premium icon request.
         It's something like, paying a sum of money for getting requested icons faster. -->
     <bool name="enable_premium_request">true</bool>
-
-    <!-- Add support for re-requesting icons -->
-    <bool name="enable_icon_request_multiple">false</bool>
 
     <!-- Enable the option to "Restore Purchases" in Settings section of the app.
         It would be best if you set it to `false`, because it's known that some
