@@ -50,7 +50,7 @@ dependencies {
      * If you've missed some versions you've to also follow update guide for those versions
      */
 
-    implementation 'com.github.zixpo:candybar:3.20.1'
+    implementation 'com.github.zixpo:candybar:3.20.2'
 
     // TODO: Remove `//` below to enable OneSignal
     //implementation 'com.onesignal:OneSignal:[5.0.0, 5.99.99]'
@@ -58,8 +58,8 @@ dependencies {
 
 // Code for automatically copying appfilter.xml and drawable.xml
 // from `res/xml` directory to `assets` directory
-task copyXMLs {
-    ['appfilter.xml', 'drawable.xml'].each {file ->
+tasks.register('copyXMLs') {
+    ['appfilter.xml', 'drawable.xml'].each { file ->
         copy {
             from "$projectDir/src/main/res/xml/$file"
             into "$projectDir/src/main/assets/"
