@@ -7,10 +7,13 @@
         <item>action</item>
         <item>adw</item>
         <item>apex</item>
+        <item>before</item>
         <item>blackberry</item>
         <item>cm_theme</item>
+        <item>coloros</item>
         <item>flick</item>
         <item>go_ex</item>
+        <item>hios</item>
         <item>holo</item>
         <item>holo_hd</item>
         <item>hyperion</item>
@@ -22,14 +25,19 @@
         <item>microsoft</item>
         <item>moto</item>
         <item>niagara</item>
+        <item>nothing</item>
         <item>nougat</item>
         <item>nova</item>
+        <item>oxygenos</item>
         <item>pixel</item>
         <item>poco</item>
+        <item>projectivy</item>
+        <item>realme_ui</item>
         <item>samsung_one_ui</item>
         <item>smart</item>
         <item>solo</item>
         <item>square</item>
+        <item>tinybit</item>
         <item>zenui</item>
     </string-array>
 
